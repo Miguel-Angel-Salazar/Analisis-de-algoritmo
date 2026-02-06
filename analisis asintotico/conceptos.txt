@@ -1,0 +1,8 @@
+g(n) = 3n + 5
+f(n) = n
+c = 4
+
+3n + 5 <= c*n # en un momento el valor de n * c va a ser mayor o igual sin importar el valor que tome n
+
+
+Notacion Big O = es el peor caso que se puede obtener en la solucion del problema 
