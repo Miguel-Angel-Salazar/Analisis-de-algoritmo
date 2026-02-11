@@ -33,7 +33,7 @@ contraseña = input("Ingrese su contraseña")
 n = len(contraseña)
 intentos = 0
 
-for i in range(0, 10**n):
+for i in range(0,n):
     clave_generada = str(i).zfill(n) 
     intentos += 1
 
@@ -41,4 +41,20 @@ for i in range(0, 10**n):
         print("el candado abre")
         print(f"la clave es {clave_generada} y se intentó {intentos} veces")
         break
+
+
+
+contraseña = input("Ingrese su contraseña")
+n = len(contraseña)
+intentos = 0
+
+while clave_generada != contraseña:
+        clave_generada = str(i).zfill(n) 
+        intentos += 1
+        i += 1
+
+if clave_generada == contraseña:
+    print("el candado abre")
+    print(f"la clave es {clave_generada} y se intentó {intentos} veces")
+            break
 
