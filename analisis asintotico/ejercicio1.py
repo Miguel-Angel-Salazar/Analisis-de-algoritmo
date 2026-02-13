@@ -33,3 +33,4 @@ su complejidad es logaritmica ya que como se encuentra el while y el resultado f
 podemos observar que llegara mas rapido que si fuera un ciclo for, por lo tanto es logaritmico
 """
 
+# siempre que se ve algo recursivo que se llame una unica vez, su complejidad es lineal O(n)

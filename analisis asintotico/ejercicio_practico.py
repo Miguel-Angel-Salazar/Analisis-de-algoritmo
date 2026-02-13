@@ -61,3 +61,28 @@ for posicion in range(n):
 
 print(f"Clave encontrada: {prefijo}")
 print(f"Número de intentos:{intentos}")
+
+"""
+clave = input("Ingrese la clave: ")
+n = len(clave)
+
+intentos = 0
+menor = 0
+mayor= (10**n)-1
+
+while menor <= mayor:
+    intentos += 1
+
+    mitad = (menor + mayor) // 2
+
+    if str(mitad).zfill(n) == clave:
+        print("encontrada")
+        print(f"numero intentos : {intentos}")
+        break
+    elif mitad <  int(clave):
+        menor = mitad + 1
+    else:
+        mayor = mitad -1
+
+
+"""
