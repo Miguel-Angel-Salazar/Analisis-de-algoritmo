@@ -15,17 +15,20 @@ def fibo_dic(n, memo = {}):
     return memo[n]
 """
 
-
-def cambio_monedas(cantidad,monedas):
+def cambio_monedas(cantidad, monedas):
     if cantidad == 0:
         return 0
-    if cantidad > 0:
+    if cantidad < 0:
         return float('inf')
     minimo = float('inf')
     for moneda in monedas:
-        resultado = cambio_monedas(cantidad - moneda,monedas)
-        minimo = min(minimo,resultado +1)
+        resultado = cambio_monedas(cantidad - moneda, monedas)
+        minimo = min(minimo, resultado + 1)
     return minimo
+
+cantidad = 11
+monedas = [1,2,5]
+print(cambio_monedas(cantidad, monedas))
 
 """
 def cambio_memo(cantidad, monedas):
@@ -44,7 +47,7 @@ cantidad = 50
 
 print(cambio_memo(cantidad, monedas))
 """
-
+"""
 def cambio_monedas_memo(cantidad, monedas, memo={}):
     
     if cantidad in memo:
@@ -60,3 +63,4 @@ def cambio_monedas_memo(cantidad, monedas, memo={}):
     memo[cantidad] = minimo
     return memo[cantidad]
 
+"""
