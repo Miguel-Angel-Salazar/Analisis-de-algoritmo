@@ -51,3 +51,9 @@ def colocar_antenas(ciudades):
     return antenas
 ciudades = [1,2,3,6,9,11,12]
 print(colocar_antenas(ciudades))
+"""
+1. Tomar la ciudad más a la izquierda no cubierta
+2. Avanzar hasta la ciudad más a la derecha que aún pueda cubrirla (≤ ciudad+4)
+3. Colocar la antena ahí
+4. Saltar todas las ciudades que queden cubiertas por esa antena
+"""

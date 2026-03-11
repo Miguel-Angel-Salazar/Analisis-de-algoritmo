@@ -34,3 +34,6 @@ cables = [
 ]
 
 print(cables_internet(casas, cables))
+
+#Ordenar los cables por costo y seleccionar siempre el más barato
+#que conecte dos casas que aún no estén conectadas entre sí.
