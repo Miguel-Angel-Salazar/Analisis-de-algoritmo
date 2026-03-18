@@ -1,4 +1,7 @@
 def generar_parentesis(n):
+    if n <= 0:
+        return []
+
     resultado = []
 
     def backtrack(cadena, abiertos, cerrados):
@@ -16,4 +19,5 @@ def generar_parentesis(n):
     return resultado
 
 
-print(generar_parentesis(3))
+if __name__ == "__main__":
+    print(generar_parentesis(3))
