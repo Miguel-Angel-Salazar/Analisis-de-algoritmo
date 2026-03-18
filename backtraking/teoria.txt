@@ -1,0 +1,3 @@
+elegir una posible solucion
+explorar esa posible solucion
+deshacer: hacer poda
