@@ -1,0 +1,108 @@
+8) El truco más importante: cómo saber si el for va sobre posiciones o sobre elementos
+
+Esto también te lo pueden evaluar.
+
+Caso A: elegir / no elegir elementos
+
+Cuando el problema es tipo:
+
+subconjuntos,
+combinaciones,
+grupos,
+selección,
+
+normalmente usas:
+
+backtrack(i, ...)
+
+Y en cada elemento decides:
+
+lo tomo,
+no lo tomo.
+
+O también:
+
+for j in range(i, len(nums)):
+Caso B: llenar posiciones
+
+Cuando el problema es tipo:
+
+formar cadenas,
+armar palabras,
+llenar casillas,
+asignar algo en orden,
+
+normalmente haces:
+
+for opcion in opciones:
+
+Porque estás decidiendo qué poner en la siguiente posición.
+
+9)Preguntas trampa de examen que tu profe puede hacer
+Trampa 1:
+“¿Esto no se puede hacer con fuerza bruta?”
+
+Sí, pero backtracking = fuerza bruta inteligente.
+
+La diferencia es que:
+
+fuerza bruta prueba todo,
+backtracking prueba y poda.
+
+💥 Esa frase sirve mucho.
+
+Trampa 2:
+“¿Cuál es la diferencia entre recursión y backtracking?”
+
+Muy importante:
+
+Recursión = técnica de programación.
+Backtracking = estrategia de búsqueda que usa recursión + deshacer decisiones + poda.
+
+O sea:
+
+No toda recursión es backtracking, pero casi todo backtracking usa recursión.
+
+Trampa 3:
+“¿Por qué haces pop()?”
+
+Porque cuando vuelves de la llamada recursiva debes deshacer la decisión para probar otra opción.
+
+Eso es el famoso:
+
+hacer → explorar → deshacer
+
+10) Mini plantilla que te salva cualquier ejercicio
+
+Si mañana te ponen un ejercicio raro, usa esto:
+
+PASO 1: ¿Qué estoy construyendo?
+una lista,
+una cadena,
+un grupo,
+un subconjunto,
+una asignación.
+PASO 2: ¿Qué representa el estado?
+índice,
+suma,
+usados,
+solución parcial,
+contador.
+PASO 3: ¿Cuál es el caso base?
+ya completé tamaño,
+llegué al final,
+alcancé objetivo.
+PASO 4: ¿Cuáles son las opciones?
+tomar / no tomar,
+elegir uno entre varios,
+poner 0 o 1,
+asignar un elemento.
+PASO 5: ¿Dónde podo?
+
+Busca:
+
+restricción rota,
+me pasé,
+ya no alcanza,
+ya está usado,
+no supera la mejor.
