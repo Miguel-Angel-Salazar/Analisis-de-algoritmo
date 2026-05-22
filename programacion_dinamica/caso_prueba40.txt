@@ -1,0 +1,160 @@
+```txt
+MATERIAS
+Matematicas_Discretas|Prof_A|Grupo_1|25|2|Lunes 7:00 11:00
+Programacion_I|Prof_B|Grupo_2|20|3|Martes 9:00 13:00
+Base_de_Datos|Prof_C|Grupo_1|30|2|Miercoles 7:00 11:00
+Algoritmos|Prof_A|Grupo_3|28|3|Jueves 9:00 13:00
+Redes|Prof_D|Grupo_2|22|2|Viernes 7:00 11:00
+Sistemas_Operativos|Prof_E|Grupo_4|35|3|Lunes 11:00 15:00
+Inteligencia_Artificial|Prof_B|Grupo_3|18|2|Martes 7:00 11:00
+Seguridad_Informatica|Prof_D|Grupo_4|24|3|Miercoles 9:00 13:00
+Compiladores|Prof_F|Grupo_5|15|3|Jueves 7:00 11:00
+Graficos_por_Computadora|Prof_G|Grupo_5|20|2|Viernes 9:00 13:00
+Ingenieria_de_Software|Prof_H|Grupo_6|32|2|Lunes 7:00 11:00
+Machine_Learning|Prof_B|Grupo_6|16|3|Martes 11:00 15:00
+Cloud_Computing|Prof_E|Grupo_6|28|2|Miercoles 11:00 15:00
+Programacion_Web|Prof_G|Grupo_5|22|3|Jueves 11:00 15:00
+Blockchain|Prof_F|Grupo_4|12|2|Viernes 11:00 15:00
+Analisis_Numerico|Prof_I|Grupo_7|26|3|Lunes 14:00 18:00
+Vision_Computacional|Prof_J|Grupo_8|18|2|Martes 14:00 18:00
+Arquitectura_Computadores|Prof_K|Grupo_9|33|3|Miercoles 7:00 11:00
+Mineria_Datos|Prof_L|Grupo_10|21|2|Jueves 14:00 18:00
+Big_Data|Prof_M|Grupo_11|40|3|Viernes 7:00 11:00
+Computacion_Cuantica|Prof_N|Grupo_12|14|2|Lunes 9:00 13:00
+Desarrollo_Movil|Prof_O|Grupo_13|27|3|Martes 7:00 11:00
+Sistemas_Distribuidos|Prof_P|Grupo_14|31|3|Miercoles 14:00 18:00
+Procesamiento_Imagenes|Prof_Q|Grupo_15|19|2|Jueves 9:00 13:00
+Robotica|Prof_R|Grupo_16|23|3|Viernes 14:00 18:00
+Bioinformatica|Prof_S|Grupo_17|17|2|Lunes 7:00 11:00
+Realidad_Virtual|Prof_T|Grupo_18|20|3|Martes 9:00 13:00
+Computacion_Grafica|Prof_U|Grupo_19|29|2|Miercoles 11:00 15:00
+Ingenieria_Datos|Prof_V|Grupo_20|36|3|Jueves 7:00 11:00
+Automatas|Prof_W|Grupo_21|24|2|Viernes 9:00 13:00
+Teoria_Complejidad|Prof_X|Grupo_22|18|3|Lunes 11:00 15:00
+Criptografia|Prof_Y|Grupo_23|22|2|Martes 14:00 18:00
+Analitica_Datos|Prof_Z|Grupo_24|34|3|Miercoles 9:00 13:00
+Deep_Learning|Prof_AA|Grupo_25|16|2|Jueves 11:00 15:00
+Internet_Cosas|Prof_BB|Grupo_26|30|3|Viernes 11:00 15:00
+Simulacion|Prof_CC|Grupo_27|25|2|Lunes 14:00 18:00
+Optimizacion|Prof_DD|Grupo_28|28|3|Martes 11:00 15:00
+Computacion_Paralela|Prof_EE|Grupo_29|32|2|Miercoles 14:00 18:00
+Ingenieria_Requirements|Prof_FF|Grupo_30|21|3|Jueves 14:00 18:00
+Testing_Software|Prof_GG|Grupo_31|26|2|Viernes 7:00 11:00
+Computacion_Nube|Prof_HH|Grupo_32|35|3|Lunes 9:00 13:00
+Etica_Profesional|Prof_II|Grupo_33|40|2|Martes 7:00 11:00
+Gestion_Proyectos|Prof_JJ|Grupo_34|38|3|Miercoles 11:00 15:00
+Ciberseguridad_Avanzada|Prof_KK|Grupo_35|20|2|Jueves 7:00 11:00
+Lenguajes_Formales|Prof_LL|Grupo_36|23|3|Viernes 14:00 18:00
+Desarrollo_Videojuegos|Prof_MM|Grupo_37|19|2|Lunes 11:00 15:00
+Computacion_Afectiva|Prof_NN|Grupo_38|15|3|Martes 9:00 13:00
+Analisis_Algoritmos|Prof_OO|Grupo_39|31|2|Miercoles 7:00 11:00
+Data_Warehouse|Prof_PP|Grupo_40|29|3|Jueves 9:00 13:00
+
+SALONES
+Salon_101|40
+Salon_102|35
+Salon_103|45
+Salon_104|50
+Salon_105|60
+Salon_106|55
+Salon_107|30
+Salon_108|25
+Salon_109|20
+Salon_110|35
+Salon_201|30
+Salon_202|25
+Salon_203|40
+Salon_204|45
+Salon_205|50
+Salon_206|60
+Salon_207|55
+Salon_208|35
+Salon_209|20
+Salon_210|25
+Laboratorio_A|20
+Laboratorio_B|15
+Laboratorio_C|25
+Laboratorio_D|30
+Laboratorio_E|35
+Auditorio_1|100
+Auditorio_2|120
+Sala_Multiuso_1|45
+Sala_Multiuso_2|50
+Sala_Multiuso_3|60
+
+HORARIOS_DISPONIBLES
+Lunes 7:00 9:00
+Lunes 9:00 11:00
+Lunes 11:00 13:00
+Lunes 14:00 16:00
+Lunes 16:00 18:00
+Martes 7:00 9:00
+Martes 9:00 11:00
+Martes 11:00 13:00
+Martes 14:00 16:00
+Martes 16:00 18:00
+Miercoles 7:00 9:00
+Miercoles 9:00 11:00
+Miercoles 11:00 13:00
+Miercoles 14:00 16:00
+Miercoles 16:00 18:00
+Jueves 7:00 9:00
+Jueves 9:00 11:00
+Jueves 11:00 13:00
+Jueves 14:00 16:00
+Jueves 16:00 18:00
+Viernes 7:00 9:00
+Viernes 9:00 11:00
+Viernes 11:00 13:00
+Viernes 14:00 16:00
+Viernes 16:00 18:00
+Sabado 7:00 9:00
+Sabado 9:00 11:00
+Sabado 11:00 13:00
+Sabado 14:00 16:00
+Sabado 16:00 18:00
+
+RESTRICCIONES_PROFESORES
+Prof_A Martes 16:00 18:00
+Prof_B Lunes 16:00 18:00
+Prof_C Miercoles 16:00 18:00
+Prof_D Jueves 14:00 16:00
+Prof_E Viernes 16:00 18:00
+Prof_F Lunes 7:00 9:00
+Prof_G Martes 7:00 9:00
+Prof_H Miercoles 14:00 16:00
+Prof_I Jueves 16:00 18:00
+Prof_J Viernes 9:00 11:00
+Prof_K Lunes 14:00 16:00
+Prof_L Martes 11:00 13:00
+Prof_M Miercoles 7:00 9:00
+Prof_N Jueves 9:00 11:00
+Prof_O Viernes 14:00 16:00
+Prof_P Lunes 11:00 13:00
+Prof_Q Martes 16:00 18:00
+Prof_R Miercoles 11:00 13:00
+Prof_S Jueves 7:00 9:00
+Prof_T Viernes 11:00 13:00
+
+PREFERENCIAS_PROFESORES
+Prof_A Lunes 7:00 9:00 alta
+Prof_B Martes 9:00 11:00 alta
+Prof_C Miercoles 7:00 9:00 media
+Prof_D Jueves 9:00 11:00 baja
+Prof_E Lunes 11:00 13:00 alta
+Prof_F Jueves 7:00 9:00 media
+Prof_G Viernes 9:00 11:00 alta
+Prof_H Lunes 7:00 9:00 alta
+Prof_I Martes 14:00 16:00 media
+Prof_J Viernes 14:00 16:00 alta
+Prof_K Miercoles 11:00 13:00 baja
+Prof_L Lunes 14:00 16:00 alta
+Prof_M Martes 11:00 13:00 media
+Prof_N Jueves 16:00 18:00 baja
+Prof_O Viernes 7:00 9:00 alta
+Prof_P Lunes 9:00 11:00 media
+Prof_Q Martes 7:00 9:00 alta
+Prof_R Miercoles 14:00 16:00 baja
+Prof_S Jueves 11:00 13:00 media
+Prof_T Viernes 16:00 18:00 alta
+```
