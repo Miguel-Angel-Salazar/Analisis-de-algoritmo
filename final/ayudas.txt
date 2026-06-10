@@ -33,3 +33,113 @@ memo[(i,j)] = matriz[i][j] + max(
     abajo,
     derecha
 )
+
+1. BACKTRACKING
+Palabras clave
+Mostrar todas las soluciones
+Todas las rutas
+Todas las subsecuencias
+Todas las combinaciones
+Todas las permutaciones
+Generar
+Enumerar
+Listar
+Pregunta típica
+¿Cuáles son todas las soluciones válidas?
+Ejemplos
+Todas las rutas en un laberinto
+
+Todas las subsecuencias de longitud k
+
+Todas las formas de colocar n reinas
+2. PROGRAMACIÓN DINÁMICA (DP)
+Palabras clave
+Máximo
+
+Mínimo
+
+Cantidad de caminos
+
+Contar formas
+
+Mayor ganancia
+
+Menor costo
+
+Subsecuencia más larga
+
+Optimizar
+
+Mejor solución
+Pregunta típica
+¿Cuál es la mejor solución?
+
+o
+
+¿Cuántas soluciones existen?
+Ejemplos
+Máximo tesoro
+
+Costo mínimo
+
+Cantidad de caminos
+
+LCS
+
+Mochila
+
+Monedas
+3. GREEDY
+Palabras clave
+Ordenar
+
+Escoger el mejor en este momento
+
+Intervalos
+
+Actividades
+
+Reuniones
+
+Valor/peso
+
+Calendario
+
+Asignación
+Pregunta típica
+¿Puedo construir la solución tomando siempre la mejor decisión local?
+Ejemplos
+Máximo número de reuniones
+
+Mochila fraccionaria
+
+Seleccionar actividades
+
+Asignar recursos
+4. DIVIDE Y VENCERÁS
+Palabras clave
+Buscar
+
+Ordenado
+
+Mitad
+
+Partir
+
+Dividir
+
+Subarreglos
+
+Merge
+
+Quick
+Pregunta típica
+¿Puedo resolverlo dividiendo el problema en partes más pequeñas?
+Ejemplos
+Búsqueda binaria
+
+Merge Sort
+
+Quick Sort
+
+Máximo subarreglo (versión clásica)
