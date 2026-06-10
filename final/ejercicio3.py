@@ -1,61 +1,47 @@
-def min_cost(A, inicio, fin):
-
-    x1, y1 = inicio
-    x2, y2 = fin
-
-    # imposible llegar moviendo solo derecha/abajo
-    if x1 > x2 or y1 > y2:
-        return float('inf')
-
-    filas = x2 - x1 + 1
-    cols = y2 - y1 + 1
-
-    dp = [[0] * cols for _ in range(filas)]
-
-    dp[0][0] = A[x1][y1]
-
-    for i in range(filas):
-        for j in range(cols):
-
-            if i == 0 and j == 0:
-                continue
-
-            arriba = dp[i-1][j] if i > 0 else float('inf')
-            izquierda = dp[i][j-1] if j > 0 else float('inf')
-
-            dp[i][j] = min(arriba, izquierda) + A[x1+i][y1+j]
-
-    return dp[-1][-1]
-
 def ruta_minima(A, p1, p2):
 
     n = len(A)
     m = len(A[0])
 
-    fin = (n-1, m-1)
+    memo = {}
 
-    costo1 = (
-        min_cost(A, (0,0), p1)
-        + min_cost(A, p1, p2)
-        + min_cost(A, p2, fin)
+    def dp(i, j, xf, yf):
+
+        if i > xf or j > yf:
+            return float("inf")
+
+        if i == xf and j == yf:
+            return A[i][j]
+
+        if (i,j,xf,yf) in memo:
+            return memo[(i,j,xf,yf)]
+
+        abajo = dp(i+1, j, xf, yf)
+        derecha = dp(i, j+1, xf, yf)
+
+        memo[(i,j,xf,yf)] = A[i][j] + min(abajo, derecha)
+
+        return memo[(i,j,xf,yf)]
+
+    r1 = (
+        dp(0,0,p1[0],p1[1]) +
+        dp(p1[0],p1[1],p2[0],p2[1]) +
+        dp(p2[0],p2[1],n-1,m-1)
         - A[p1[0]][p1[1]]
         - A[p2[0]][p2[1]]
     )
 
-    costo2 = (
-        min_cost(A, (0,0), p2)
-        + min_cost(A, p2, p1)
-        + min_cost(A, p1, fin)
+    r2 = (
+        dp(0,0,p2[0],p2[1]) +
+        dp(p2[0],p2[1],p1[0],p1[1]) +
+        dp(p1[0],p1[1],n-1,m-1)
         - A[p1[0]][p1[1]]
         - A[p2[0]][p2[1]]
     )
 
-    respuesta = min(costo1, costo2)
+    ans = min(r1, r2)
 
-    if respuesta == float('inf'):
-        return -1
-
-    return respuesta
+    return -1 if ans == float("inf") else ans
 
 A = [
     [1,3,1],
