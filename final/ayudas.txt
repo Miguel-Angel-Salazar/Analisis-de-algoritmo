@@ -1,0 +1,35 @@
+Objetivo	Operación	Casilla bloqueada
+Máximo tesoro	max	-inf
+Máxima ganancia	max	-inf
+Mínimo costo	min	+inf
+Menor distancia	min	+inf
+Contar caminos	suma	0
+
+#Contar caminos
+if destino:
+    return 1
+
+if bloqueada:
+    return 0
+
+abajo = dp(i+1,j)
+
+derecha = dp(i,j+1)
+
+memo[(i,j)] = abajo + derecha
+
+#Máximo tesoro
+if destino:
+    return matriz[i][j]
+
+if bloqueada:
+    return -inf
+
+abajo = dp(i+1,j)
+
+derecha = dp(i,j+1)
+
+memo[(i,j)] = matriz[i][j] + max(
+    abajo,
+    derecha
+)
